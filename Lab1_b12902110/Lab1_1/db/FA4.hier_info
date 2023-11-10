@@ -1,0 +1,204 @@
+|FA4
+Co <= FA:inst.Co
+A[0] => FA:inst5.A
+A[1] => FA:inst4.A
+A[2] => FA:inst3.A
+A[3] => FA:inst.A
+B[0] => FA:inst5.B
+B[1] => FA:inst4.B
+B[2] => FA:inst3.B
+B[3] => FA:inst.B
+S[0] <= FA:inst5.S
+S[1] <= FA:inst4.S
+S[2] <= FA:inst3.S
+S[3] <= FA:inst.S
+
+
+|FA4|FA:inst
+S <= xor_3:inst.o1
+A => xor_3:inst.i1
+A => and_2:inst2.i1
+A => and_2:inst3.i1
+B => xor_3:inst.i2
+B => and_2:inst2.i2
+B => and_2:inst4.i1
+Ci => xor_3:inst.i3
+Ci => and_2:inst3.i2
+Ci => and_2:inst4.i2
+Co <= or_3:inst5.o1
+
+
+|FA4|FA:inst|xor_3:inst
+o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst1.IN1
+
+
+|FA4|FA:inst|or_3:inst5
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i3 => inst.IN1
+i1 => inst.IN2
+
+
+|FA4|FA:inst|and_2:inst2
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FA4|FA:inst|and_2:inst3
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FA4|FA:inst|and_2:inst4
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FA4|FA:inst3
+S <= xor_3:inst.o1
+A => xor_3:inst.i1
+A => and_2:inst2.i1
+A => and_2:inst3.i1
+B => xor_3:inst.i2
+B => and_2:inst2.i2
+B => and_2:inst4.i1
+Ci => xor_3:inst.i3
+Ci => and_2:inst3.i2
+Ci => and_2:inst4.i2
+Co <= or_3:inst5.o1
+
+
+|FA4|FA:inst3|xor_3:inst
+o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst1.IN1
+
+
+|FA4|FA:inst3|or_3:inst5
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i3 => inst.IN1
+i1 => inst.IN2
+
+
+|FA4|FA:inst3|and_2:inst2
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FA4|FA:inst3|and_2:inst3
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FA4|FA:inst3|and_2:inst4
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FA4|FA:inst4
+S <= xor_3:inst.o1
+A => xor_3:inst.i1
+A => and_2:inst2.i1
+A => and_2:inst3.i1
+B => xor_3:inst.i2
+B => and_2:inst2.i2
+B => and_2:inst4.i1
+Ci => xor_3:inst.i3
+Ci => and_2:inst3.i2
+Ci => and_2:inst4.i2
+Co <= or_3:inst5.o1
+
+
+|FA4|FA:inst4|xor_3:inst
+o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst1.IN1
+
+
+|FA4|FA:inst4|or_3:inst5
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i3 => inst.IN1
+i1 => inst.IN2
+
+
+|FA4|FA:inst4|and_2:inst2
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FA4|FA:inst4|and_2:inst3
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FA4|FA:inst4|and_2:inst4
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FA4|FA:inst5
+S <= xor_3:inst.o1
+A => xor_3:inst.i1
+A => and_2:inst2.i1
+A => and_2:inst3.i1
+B => xor_3:inst.i2
+B => and_2:inst2.i2
+B => and_2:inst4.i1
+Ci => xor_3:inst.i3
+Ci => and_2:inst3.i2
+Ci => and_2:inst4.i2
+Co <= or_3:inst5.o1
+
+
+|FA4|FA:inst5|xor_3:inst
+o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst1.IN1
+
+
+|FA4|FA:inst5|or_3:inst5
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i3 => inst.IN1
+i1 => inst.IN2
+
+
+|FA4|FA:inst5|and_2:inst2
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FA4|FA:inst5|and_2:inst3
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FA4|FA:inst5|and_2:inst4
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|FA4|gnd_1:inst1
+o1 <= <GND>
+
+
