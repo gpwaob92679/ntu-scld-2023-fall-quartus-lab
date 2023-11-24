@@ -14,7 +14,7 @@
 
 // PROGRAM		"Quartus II 32-bit"
 // VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
-// CREATED		"Fri Nov 10 16:27:43 2023"
+// CREATED		"Fri Nov 24 17:54:20 2023"
 
 module MU4(
 	A,

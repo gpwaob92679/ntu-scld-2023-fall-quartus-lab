@@ -14,22 +14,22 @@
 
 // PROGRAM		"Quartus II 32-bit"
 // VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
-// CREATED		"Fri Nov 24 17:01:46 2023"
+// CREATED		"Fri Nov 24 17:51:14 2023"
 
 module FS(
-	B,
-	A,
-	Bi,
-	Bo,
-	D
+	X,
+	BOin,
+	Y,
+	D,
+	BOout
 );
 
 
-input wire	B;
-input wire	A;
-input wire	Bi;
-output wire	Bo;
+input wire	X;
+input wire	BOin;
+input wire	Y;
 output wire	D;
+output wire	BOout;
 
 wire	SYNTHESIZED_WIRE_5;
 wire	SYNTHESIZED_WIRE_2;
@@ -41,32 +41,32 @@ wire	SYNTHESIZED_WIRE_4;
 
 
 xor_3	b2v_inst(
-	.i1(A),
-	.i2(B),
-	.i3(Bi),
+	.i1(X),
+	.i2(Y),
+	.i3(BOin),
 	.o1(D));
 
 
 not_1	b2v_inst1(
-	.i1(A),
+	.i1(X),
 	.o1(SYNTHESIZED_WIRE_5));
 
 
 and_2	b2v_inst2(
 	.i1(SYNTHESIZED_WIRE_5),
-	.i2(B),
+	.i2(Y),
 	.o1(SYNTHESIZED_WIRE_2));
 
 
 and_2	b2v_inst3(
 	.i1(SYNTHESIZED_WIRE_5),
-	.i2(Bi),
+	.i2(BOin),
 	.o1(SYNTHESIZED_WIRE_3));
 
 
 and_2	b2v_inst4(
-	.i1(B),
-	.i2(Bi),
+	.i1(Y),
+	.i2(BOin),
 	.o1(SYNTHESIZED_WIRE_4));
 
 
@@ -74,7 +74,7 @@ or_3	b2v_inst5(
 	.i1(SYNTHESIZED_WIRE_2),
 	.i2(SYNTHESIZED_WIRE_3),
 	.i3(SYNTHESIZED_WIRE_4),
-	.o1(Bo));
+	.o1(BOout));
 
 
 endmodule

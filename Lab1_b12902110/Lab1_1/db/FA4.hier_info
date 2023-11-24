@@ -1,13 +1,13 @@
 |FA4
-Co <= FA:inst.Co
-A[0] => FA:inst5.A
-A[1] => FA:inst4.A
-A[2] => FA:inst3.A
-A[3] => FA:inst.A
-B[0] => FA:inst5.B
-B[1] => FA:inst4.B
-B[2] => FA:inst3.B
-B[3] => FA:inst.B
+Co <= FA:inst.Cout
+A[0] => FA:inst5.X
+A[1] => FA:inst4.X
+A[2] => FA:inst3.X
+A[3] => FA:inst.X
+B[0] => FA:inst5.Y
+B[1] => FA:inst4.Y
+B[2] => FA:inst3.Y
+B[3] => FA:inst.Y
 S[0] <= FA:inst5.S
 S[1] <= FA:inst4.S
 S[2] <= FA:inst3.S
@@ -16,16 +16,16 @@ S[3] <= FA:inst.S
 
 |FA4|FA:inst
 S <= xor_3:inst.o1
-A => xor_3:inst.i1
-A => and_2:inst2.i1
-A => and_2:inst3.i1
-B => xor_3:inst.i2
-B => and_2:inst2.i2
-B => and_2:inst4.i1
-Ci => xor_3:inst.i3
-Ci => and_2:inst3.i2
-Ci => and_2:inst4.i2
-Co <= or_3:inst5.o1
+X => xor_3:inst.i1
+X => and_2:inst2.i1
+X => and_2:inst3.i1
+Y => xor_3:inst.i2
+Y => and_2:inst2.i2
+Y => and_2:inst4.i1
+Cin => xor_3:inst.i3
+Cin => and_2:inst3.i2
+Cin => and_2:inst4.i2
+Cout <= or_3:inst5.o1
 
 
 |FA4|FA:inst|xor_3:inst
@@ -62,16 +62,16 @@ i2 => inst.IN1
 
 |FA4|FA:inst3
 S <= xor_3:inst.o1
-A => xor_3:inst.i1
-A => and_2:inst2.i1
-A => and_2:inst3.i1
-B => xor_3:inst.i2
-B => and_2:inst2.i2
-B => and_2:inst4.i1
-Ci => xor_3:inst.i3
-Ci => and_2:inst3.i2
-Ci => and_2:inst4.i2
-Co <= or_3:inst5.o1
+X => xor_3:inst.i1
+X => and_2:inst2.i1
+X => and_2:inst3.i1
+Y => xor_3:inst.i2
+Y => and_2:inst2.i2
+Y => and_2:inst4.i1
+Cin => xor_3:inst.i3
+Cin => and_2:inst3.i2
+Cin => and_2:inst4.i2
+Cout <= or_3:inst5.o1
 
 
 |FA4|FA:inst3|xor_3:inst
@@ -108,16 +108,16 @@ i2 => inst.IN1
 
 |FA4|FA:inst4
 S <= xor_3:inst.o1
-A => xor_3:inst.i1
-A => and_2:inst2.i1
-A => and_2:inst3.i1
-B => xor_3:inst.i2
-B => and_2:inst2.i2
-B => and_2:inst4.i1
-Ci => xor_3:inst.i3
-Ci => and_2:inst3.i2
-Ci => and_2:inst4.i2
-Co <= or_3:inst5.o1
+X => xor_3:inst.i1
+X => and_2:inst2.i1
+X => and_2:inst3.i1
+Y => xor_3:inst.i2
+Y => and_2:inst2.i2
+Y => and_2:inst4.i1
+Cin => xor_3:inst.i3
+Cin => and_2:inst3.i2
+Cin => and_2:inst4.i2
+Cout <= or_3:inst5.o1
 
 
 |FA4|FA:inst4|xor_3:inst
@@ -154,16 +154,16 @@ i2 => inst.IN1
 
 |FA4|FA:inst5
 S <= xor_3:inst.o1
-A => xor_3:inst.i1
-A => and_2:inst2.i1
-A => and_2:inst3.i1
-B => xor_3:inst.i2
-B => and_2:inst2.i2
-B => and_2:inst4.i1
-Ci => xor_3:inst.i3
-Ci => and_2:inst3.i2
-Ci => and_2:inst4.i2
-Co <= or_3:inst5.o1
+X => xor_3:inst.i1
+X => and_2:inst2.i1
+X => and_2:inst3.i1
+Y => xor_3:inst.i2
+Y => and_2:inst2.i2
+Y => and_2:inst4.i1
+Cin => xor_3:inst.i3
+Cin => and_2:inst3.i2
+Cin => and_2:inst4.i2
+Cout <= or_3:inst5.o1
 
 
 |FA4|FA:inst5|xor_3:inst

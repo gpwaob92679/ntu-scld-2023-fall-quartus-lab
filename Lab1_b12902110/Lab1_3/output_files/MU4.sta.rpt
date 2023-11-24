@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for MU4
-Fri Nov 10 16:43:09 2023
+Fri Nov 24 17:55:13 2023
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -853,7 +853,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Nov 10 16:43:07 2023
+    Info: Processing started: Fri Nov 24 17:55:10 2023
 Info: Command: quartus_sta MU4 -c MU4
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -902,8 +902,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 454 megabytes
-    Info: Processing ended: Fri Nov 10 16:43:09 2023
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Fri Nov 24 17:55:13 2023
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

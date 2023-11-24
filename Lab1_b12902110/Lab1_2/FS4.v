@@ -14,7 +14,7 @@
 
 // PROGRAM		"Quartus II 32-bit"
 // VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
-// CREATED		"Fri Nov 24 17:01:54 2023"
+// CREATED		"Fri Nov 24 18:06:59 2023"
 
 module FS4(
 	A,
@@ -38,27 +38,27 @@ wire	SYNTHESIZED_WIRE_3;
 
 
 FS	b2v_inst(
-	.A(A[3]),
-	.B(B[3]),
-	.Bi(SYNTHESIZED_WIRE_0),
-	.Bo(D_ALTERA_SYNTHESIZED[4]),
-	.D(D_ALTERA_SYNTHESIZED[3]));
+	.X(A[3]),
+	.Y(B[3]),
+	.BOin(SYNTHESIZED_WIRE_0),
+	.D(D_ALTERA_SYNTHESIZED[3]),
+	.BOout(D_ALTERA_SYNTHESIZED[4]));
 
 
 FS	b2v_inst1(
-	.A(A[2]),
-	.B(B[2]),
-	.Bi(SYNTHESIZED_WIRE_1),
-	.Bo(SYNTHESIZED_WIRE_0),
-	.D(D_ALTERA_SYNTHESIZED[2]));
+	.X(A[2]),
+	.Y(B[2]),
+	.BOin(SYNTHESIZED_WIRE_1),
+	.D(D_ALTERA_SYNTHESIZED[2]),
+	.BOout(SYNTHESIZED_WIRE_0));
 
 
 FS	b2v_inst2(
-	.A(A[1]),
-	.B(B[1]),
-	.Bi(SYNTHESIZED_WIRE_2),
-	.Bo(SYNTHESIZED_WIRE_1),
-	.D(D_ALTERA_SYNTHESIZED[1]));
+	.X(A[1]),
+	.Y(B[1]),
+	.BOin(SYNTHESIZED_WIRE_2),
+	.D(D_ALTERA_SYNTHESIZED[1]),
+	.BOout(SYNTHESIZED_WIRE_1));
 
 
 gnd_1	b2v_inst_gnd(
@@ -66,11 +66,11 @@ gnd_1	b2v_inst_gnd(
 
 
 FS	b2v_qw(
-	.A(A[0]),
-	.B(B[0]),
-	.Bi(SYNTHESIZED_WIRE_3),
-	.Bo(SYNTHESIZED_WIRE_2),
-	.D(D_ALTERA_SYNTHESIZED[0]));
+	.X(A[0]),
+	.Y(B[0]),
+	.BOin(SYNTHESIZED_WIRE_3),
+	.D(D_ALTERA_SYNTHESIZED[0]),
+	.BOout(SYNTHESIZED_WIRE_2));
 
 assign	D = D_ALTERA_SYNTHESIZED;
 

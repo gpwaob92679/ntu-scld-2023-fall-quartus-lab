@@ -14,7 +14,7 @@
 
 // PROGRAM		"Quartus II 32-bit"
 // VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
-// CREATED		"Fri Nov 10 16:25:22 2023"
+// CREATED		"Fri Nov 24 17:47:46 2023"
 
 module FA4(
 	A,
@@ -39,11 +39,11 @@ wire	SYNTHESIZED_WIRE_3;
 
 
 FA	b2v_inst(
-	.A(A[3]),
-	.B(B[3]),
-	.Ci(SYNTHESIZED_WIRE_0),
+	.X(A[3]),
+	.Y(B[3]),
+	.Cin(SYNTHESIZED_WIRE_0),
 	.S(S[3]),
-	.Co(Co));
+	.Cout(Co));
 
 
 gnd_1	b2v_inst1(
@@ -51,27 +51,27 @@ gnd_1	b2v_inst1(
 
 
 FA	b2v_inst3(
-	.A(A[2]),
-	.B(B[2]),
-	.Ci(SYNTHESIZED_WIRE_1),
+	.X(A[2]),
+	.Y(B[2]),
+	.Cin(SYNTHESIZED_WIRE_1),
 	.S(S[2]),
-	.Co(SYNTHESIZED_WIRE_0));
+	.Cout(SYNTHESIZED_WIRE_0));
 
 
 FA	b2v_inst4(
-	.A(A[1]),
-	.B(B[1]),
-	.Ci(SYNTHESIZED_WIRE_2),
+	.X(A[1]),
+	.Y(B[1]),
+	.Cin(SYNTHESIZED_WIRE_2),
 	.S(S[1]),
-	.Co(SYNTHESIZED_WIRE_1));
+	.Cout(SYNTHESIZED_WIRE_1));
 
 
 FA	b2v_inst5(
-	.A(A[0]),
-	.B(B[0]),
-	.Ci(SYNTHESIZED_WIRE_3),
+	.X(A[0]),
+	.Y(B[0]),
+	.Cin(SYNTHESIZED_WIRE_3),
 	.S(S[0]),
-	.Co(SYNTHESIZED_WIRE_2));
+	.Cout(SYNTHESIZED_WIRE_2));
 
 
 endmodule

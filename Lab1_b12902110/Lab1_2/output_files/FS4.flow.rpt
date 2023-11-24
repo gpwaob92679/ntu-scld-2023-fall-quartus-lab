@@ -1,5 +1,5 @@
 Flow report for FS4
-Fri Nov 24 17:15:55 2023
+Fri Nov 24 17:53:07 2023
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Fri Nov 24 17:15:55 2023      ;
+; Flow Status                        ; Successful - Fri Nov 24 17:53:07 2023      ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; FS4                                        ;
 ; Top-level Entity Name              ; FS4                                        ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/24/2023 17:15:13 ;
+; Start date & time ; 11/24/2023 17:52:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; FS4                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+----------------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 52240494666.170081731302392                                                            ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 52240494666.170081954603900                                                            ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                                     ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:/ntu-scld-2023-fall-quartus-lab/Lab1_b12902110/Lab1_2/simulation/qsim/               ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                                            ; --            ; --          ; eda_simulation ;
@@ -97,14 +97,14 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 393 MB              ; 00:00:01                           ;
-; Fitter                    ; 00:00:17     ; 1.6                     ; 838 MB              ; 00:00:18                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 381 MB              ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 442 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 323 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 344 MB              ; 00:00:00                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 393 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:17     ; 1.6                     ; 819 MB              ; 00:00:21                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 381 MB              ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 442 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 323 MB              ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 344 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 347 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:29     ; --                      ; --                  ; 00:00:29                           ;
+; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:33                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -3,28 +3,35 @@ D[0] <= FS:qw.D
 D[1] <= FS:inst2.D
 D[2] <= FS:inst1.D
 D[3] <= FS:inst.D
-D[4] <= FS:inst.Bo
-A[0] => FS:qw.A
-A[1] => FS:inst2.A
-A[2] => FS:inst1.A
-A[3] => FS:inst.A
-B[0] => FS:qw.B
-B[1] => FS:inst2.B
-B[2] => FS:inst1.B
-B[3] => FS:inst.B
+D[4] <= FS:inst.BOout
+A[0] => FS:qw.X
+A[1] => FS:inst2.X
+A[2] => FS:inst1.X
+A[3] => FS:inst.X
+B[0] => FS:qw.Y
+B[1] => FS:inst2.Y
+B[2] => FS:inst1.Y
+B[3] => FS:inst.Y
 
 
 |FS4|FS:qw
-Bo <= or_3:inst5.o1
-A => not_1:inst1.i1
-A => xor_3:inst.i1
-B => and_2:inst2.i2
-B => and_2:inst4.i1
-B => xor_3:inst.i2
-Bi => and_2:inst3.i2
-Bi => and_2:inst4.i2
-Bi => xor_3:inst.i3
 D <= xor_3:inst.o1
+X => xor_3:inst.i1
+X => not_1:inst1.i1
+Y => xor_3:inst.i2
+Y => and_2:inst2.i2
+Y => and_2:inst4.i1
+BOin => xor_3:inst.i3
+BOin => and_2:inst3.i2
+BOin => and_2:inst4.i2
+BOout <= or_3:inst5.o1
+
+
+|FS4|FS:qw|xor_3:inst
+o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst1.IN1
 
 
 |FS4|FS:qw|or_3:inst5
@@ -57,28 +64,28 @@ i1 => inst.IN0
 i2 => inst.IN1
 
 
-|FS4|FS:qw|xor_3:inst
-o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-i1 => inst.IN0
-i2 => inst.IN1
-i3 => inst1.IN1
-
-
 |FS4|gnd_1:inst_gnd
 o1 <= <GND>
 
 
 |FS4|FS:inst
-Bo <= or_3:inst5.o1
-A => not_1:inst1.i1
-A => xor_3:inst.i1
-B => and_2:inst2.i2
-B => and_2:inst4.i1
-B => xor_3:inst.i2
-Bi => and_2:inst3.i2
-Bi => and_2:inst4.i2
-Bi => xor_3:inst.i3
 D <= xor_3:inst.o1
+X => xor_3:inst.i1
+X => not_1:inst1.i1
+Y => xor_3:inst.i2
+Y => and_2:inst2.i2
+Y => and_2:inst4.i1
+BOin => xor_3:inst.i3
+BOin => and_2:inst3.i2
+BOin => and_2:inst4.i2
+BOout <= or_3:inst5.o1
+
+
+|FS4|FS:inst|xor_3:inst
+o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst1.IN1
 
 
 |FS4|FS:inst|or_3:inst5
@@ -111,24 +118,24 @@ i1 => inst.IN0
 i2 => inst.IN1
 
 
-|FS4|FS:inst|xor_3:inst
+|FS4|FS:inst1
+D <= xor_3:inst.o1
+X => xor_3:inst.i1
+X => not_1:inst1.i1
+Y => xor_3:inst.i2
+Y => and_2:inst2.i2
+Y => and_2:inst4.i1
+BOin => xor_3:inst.i3
+BOin => and_2:inst3.i2
+BOin => and_2:inst4.i2
+BOout <= or_3:inst5.o1
+
+
+|FS4|FS:inst1|xor_3:inst
 o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 i1 => inst.IN0
 i2 => inst.IN1
 i3 => inst1.IN1
-
-
-|FS4|FS:inst1
-Bo <= or_3:inst5.o1
-A => not_1:inst1.i1
-A => xor_3:inst.i1
-B => and_2:inst2.i2
-B => and_2:inst4.i1
-B => xor_3:inst.i2
-Bi => and_2:inst3.i2
-Bi => and_2:inst4.i2
-Bi => xor_3:inst.i3
-D <= xor_3:inst.o1
 
 
 |FS4|FS:inst1|or_3:inst5
@@ -161,24 +168,24 @@ i1 => inst.IN0
 i2 => inst.IN1
 
 
-|FS4|FS:inst1|xor_3:inst
+|FS4|FS:inst2
+D <= xor_3:inst.o1
+X => xor_3:inst.i1
+X => not_1:inst1.i1
+Y => xor_3:inst.i2
+Y => and_2:inst2.i2
+Y => and_2:inst4.i1
+BOin => xor_3:inst.i3
+BOin => and_2:inst3.i2
+BOin => and_2:inst4.i2
+BOout <= or_3:inst5.o1
+
+
+|FS4|FS:inst2|xor_3:inst
 o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 i1 => inst.IN0
 i2 => inst.IN1
 i3 => inst1.IN1
-
-
-|FS4|FS:inst2
-Bo <= or_3:inst5.o1
-A => not_1:inst1.i1
-A => xor_3:inst.i1
-B => and_2:inst2.i2
-B => and_2:inst4.i1
-B => xor_3:inst.i2
-Bi => and_2:inst3.i2
-Bi => and_2:inst4.i2
-Bi => xor_3:inst.i3
-D <= xor_3:inst.o1
 
 
 |FS4|FS:inst2|or_3:inst5
@@ -209,12 +216,5 @@ i2 => inst.IN1
 o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
 i1 => inst.IN0
 i2 => inst.IN1
-
-
-|FS4|FS:inst2|xor_3:inst
-o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-i1 => inst.IN0
-i2 => inst.IN1
-i3 => inst1.IN1
 
 

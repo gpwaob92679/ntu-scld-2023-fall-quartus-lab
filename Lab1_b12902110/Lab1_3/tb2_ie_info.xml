@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for Altera-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<QuartusExecution>
+		<AddressBits>32</AddressBits>
+		<ApplicationError>
+		<Bits>32</Bits>
+		<CommandLine>quartus C:\ntu-scld-2023-fall-quartus-lab\Lab1_b12902110\Lab1_2\FS4.qpf</CommandLine>
+		<ErrorMessage>Access Violation at 0X6493C8ED</ErrorMessage>
+		<Line>0</Line>
+		<Platform>windows</Platform>
+		<SourceFile>unknown</SourceFile>
+		<StackTrace>
+	 0x6493c8ec: (?close_all_in_list@QUI_FRAME_WND@@IAE_NV?$QList@PAVQMdiSubWindow@@@@PAVQMdiSubWindow@@U_GUID@@@Z + 0x2ac)
+	 0x649417ab: (?close_all_windows@QUI_FRAME_WND@@QAE_NU_GUID@@@Z + 0xbb)
+	 0x64941bf2: (?ntfq_msg_notify_project_close@QUI_FRAME_WND@@UAE_NI_N@Z + 0x52)
+	 0x644f116b: (?dispatch_notify_msg@NTFQ_NOTIFY_TARGET@@IAE_NPBVNTFQ_NOTIFY_MAP@@II_N@Z + 0x3b)
+	 0x644f12c2: (?on_ntfq_notify@NTFQ_NOTIFY_TARGET@@UAE_NII_N@Z + 0x22)
+	 0x644f1478: (?broadcast_notify@NTFQ_NOTIFY_MGR@@UAE_NII@Z + 0x48)
+	 0x644f18ef: (?ntfq_broadcast_notify@@YA_NII@Z + 0x6f)
+	 0x64906961: (?close_impl@PROJ_PROJECT@@AAE_NXZ + 0xf1)
+	 0x649092fc: (?close@PROJ_PROJECT@@SA_NXZ + 0x6c)
+	 0x6495e533: (?qt_static_metacall@QUI_FRAME_WND@@CAXPAVQObject@@W4Call@QMetaObject@@HPAPAX@Z + 0x593)
+	 0x65a6c74a: (?activate@QMetaObject@@SAXPAVQObject@@PBU1@HPAPAX@Z + 0x3ba)
+	 0x5b32c6bd: (?activate@QAction@@QAEXW4ActionEvent@1@@Z + 0xcd)
+	 0x5b68eb88: (?findIdForAction@QMenu@@ABEHPAVQAction@@@Z + 0x278)
+	 0x5b694bd0: (?internalDelayedPopup@QMenu@@AAEXXZ + 0x510)
+		</StackTrace>
+		<Subsystem>unknown</Subsystem>
+	</ApplicationError>
+	<Compilation>
+			<CompileID>0</CompileID>
+			<DeviceFamily/>
+			<IncrementalCompilation/>
+			<TopLevelEntityName/>
+		</Compilation>
+		<DateInvoked>2023/11/24 17:44:23</DateInvoked>
+		<ElapsedTime>778</ElapsedTime>
+		<IP>192.168.15.135</IP>
+		<IsInternal>false</IsInternal>
+		<IsQt>true</IsQt>
+		<License>
+			<Edition>Web Edition</Edition>
+			<LicenseHostID/>
+		</License>
+		<Machine>
+			<CPUCountLogical>4</CPUCountLogical>
+			<CPUCountPhysical>1</CPUCountPhysical>
+			<CPUSpeed>2400</CPUSpeed>
+			<Hostname>SCLD-user-PC</Hostname>
+			<NIC>
+				<Address>000c29c6b04a</Address>
+			</NIC>
+			<OS>Windows 7</OS>
+			<OSAddressBits>32</OSAddressBits>
+			<OSVersion>6.1</OSVersion>
+			<Platform>windows</Platform>
+			<ScreenResolution>unknown</ScreenResolution>
+			<TotalPhysicalRAM>2047</TotalPhysicalRAM>
+			<TotalVirtualRAM>2047</TotalVirtualRAM>
+		</Machine>
+		<Name>quartus</Name>
+		<PeakMemoryUsed>0</PeakMemoryUsed>
+		<ProjectRevision>
+			<ProjectName/>
+			<Revision/>
+		</ProjectRevision>
+		<QuartusInstallation>
+			<InstallationID>8796759480604.151085603201548</InstallationID>
+			<Version>
+				<Build>162</Build>
+				<BuildSite>SJ</BuildSite>
+				<BuildSuffix/>
+				<Edition>Web Edition</Edition>
+				<ServicePack>0</ServicePack>
+				<VersionNumber>13.1</VersionNumber>
+			</Version>
+		</QuartusInstallation>
+		<QuartusUser>
+			<AlteraUserName/>
+			<FAEContactName/>
+			<TalkbackStatus>
+				<DateSet/>
+				<TalkbackOn>true</TalkbackOn>
+			</TalkbackStatus>
+			<UserID>8796759480604.151085606203784</UserID>
+			<UserName>SCLD-user</UserName>
+		</QuartusUser>
+	</QuartusExecution>
+	<SchemaVersion>schema_2013-01-18</SchemaVersion>
+</ProgramExecution>
+

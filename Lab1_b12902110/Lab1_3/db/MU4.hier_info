@@ -38,7 +38,7 @@ B[0] => B[0].IN1
 B[1] => B[1].IN1
 B[2] => B[2].IN1
 B[3] => B[3].IN1
-Co <= FA:b2v_inst.Co
+Co <= FA:b2v_inst.Cout
 S[0] <= FA:b2v_inst5.S
 S[1] <= FA:b2v_inst4.S
 S[2] <= FA:b2v_inst3.S
@@ -46,11 +46,11 @@ S[3] <= FA:b2v_inst.S
 
 
 |MU4|FA4:inst7|FA:b2v_inst
-A => A.IN3
-B => B.IN3
-Ci => Ci.IN3
+X => X.IN3
+Y => Y.IN3
+Cin => Cin.IN3
 S <= xor_3:b2v_inst.o1
-Co <= or_3:b2v_inst5.o1
+Cout <= or_3:b2v_inst5.o1
 
 
 |MU4|FA4:inst7|FA:b2v_inst|xor_3:b2v_inst
@@ -90,11 +90,11 @@ o1 <= <GND>
 
 
 |MU4|FA4:inst7|FA:b2v_inst3
-A => A.IN3
-B => B.IN3
-Ci => Ci.IN3
+X => X.IN3
+Y => Y.IN3
+Cin => Cin.IN3
 S <= xor_3:b2v_inst.o1
-Co <= or_3:b2v_inst5.o1
+Cout <= or_3:b2v_inst5.o1
 
 
 |MU4|FA4:inst7|FA:b2v_inst3|xor_3:b2v_inst
@@ -130,11 +130,11 @@ i1 => inst.IN2
 
 
 |MU4|FA4:inst7|FA:b2v_inst4
-A => A.IN3
-B => B.IN3
-Ci => Ci.IN3
+X => X.IN3
+Y => Y.IN3
+Cin => Cin.IN3
 S <= xor_3:b2v_inst.o1
-Co <= or_3:b2v_inst5.o1
+Cout <= or_3:b2v_inst5.o1
 
 
 |MU4|FA4:inst7|FA:b2v_inst4|xor_3:b2v_inst
@@ -170,11 +170,11 @@ i1 => inst.IN2
 
 
 |MU4|FA4:inst7|FA:b2v_inst5
-A => A.IN3
-B => B.IN3
-Ci => Ci.IN3
+X => X.IN3
+Y => Y.IN3
+Cin => Cin.IN3
 S <= xor_3:b2v_inst.o1
-Co <= or_3:b2v_inst5.o1
+Cout <= or_3:b2v_inst5.o1
 
 
 |MU4|FA4:inst7|FA:b2v_inst5|xor_3:b2v_inst
@@ -218,7 +218,7 @@ B[0] => B[0].IN1
 B[1] => B[1].IN1
 B[2] => B[2].IN1
 B[3] => B[3].IN1
-Co <= FA:b2v_inst.Co
+Co <= FA:b2v_inst.Cout
 S[0] <= FA:b2v_inst5.S
 S[1] <= FA:b2v_inst4.S
 S[2] <= FA:b2v_inst3.S
@@ -226,11 +226,11 @@ S[3] <= FA:b2v_inst.S
 
 
 |MU4|FA4:inst6|FA:b2v_inst
-A => A.IN3
-B => B.IN3
-Ci => Ci.IN3
+X => X.IN3
+Y => Y.IN3
+Cin => Cin.IN3
 S <= xor_3:b2v_inst.o1
-Co <= or_3:b2v_inst5.o1
+Cout <= or_3:b2v_inst5.o1
 
 
 |MU4|FA4:inst6|FA:b2v_inst|xor_3:b2v_inst
@@ -270,11 +270,11 @@ o1 <= <GND>
 
 
 |MU4|FA4:inst6|FA:b2v_inst3
-A => A.IN3
-B => B.IN3
-Ci => Ci.IN3
+X => X.IN3
+Y => Y.IN3
+Cin => Cin.IN3
 S <= xor_3:b2v_inst.o1
-Co <= or_3:b2v_inst5.o1
+Cout <= or_3:b2v_inst5.o1
 
 
 |MU4|FA4:inst6|FA:b2v_inst3|xor_3:b2v_inst
@@ -310,11 +310,11 @@ i1 => inst.IN2
 
 
 |MU4|FA4:inst6|FA:b2v_inst4
-A => A.IN3
-B => B.IN3
-Ci => Ci.IN3
+X => X.IN3
+Y => Y.IN3
+Cin => Cin.IN3
 S <= xor_3:b2v_inst.o1
-Co <= or_3:b2v_inst5.o1
+Cout <= or_3:b2v_inst5.o1
 
 
 |MU4|FA4:inst6|FA:b2v_inst4|xor_3:b2v_inst
@@ -350,11 +350,11 @@ i1 => inst.IN2
 
 
 |MU4|FA4:inst6|FA:b2v_inst5
-A => A.IN3
-B => B.IN3
-Ci => Ci.IN3
+X => X.IN3
+Y => Y.IN3
+Cin => Cin.IN3
 S <= xor_3:b2v_inst.o1
-Co <= or_3:b2v_inst5.o1
+Cout <= or_3:b2v_inst5.o1
 
 
 |MU4|FA4:inst6|FA:b2v_inst5|xor_3:b2v_inst
@@ -398,7 +398,7 @@ B[0] => B[0].IN1
 B[1] => B[1].IN1
 B[2] => B[2].IN1
 B[3] => B[3].IN1
-Co <= FA:b2v_inst.Co
+Co <= FA:b2v_inst.Cout
 S[0] <= FA:b2v_inst5.S
 S[1] <= FA:b2v_inst4.S
 S[2] <= FA:b2v_inst3.S
@@ -406,11 +406,11 @@ S[3] <= FA:b2v_inst.S
 
 
 |MU4|FA4:inst|FA:b2v_inst
-A => A.IN3
-B => B.IN3
-Ci => Ci.IN3
+X => X.IN3
+Y => Y.IN3
+Cin => Cin.IN3
 S <= xor_3:b2v_inst.o1
-Co <= or_3:b2v_inst5.o1
+Cout <= or_3:b2v_inst5.o1
 
 
 |MU4|FA4:inst|FA:b2v_inst|xor_3:b2v_inst
@@ -450,11 +450,11 @@ o1 <= <GND>
 
 
 |MU4|FA4:inst|FA:b2v_inst3
-A => A.IN3
-B => B.IN3
-Ci => Ci.IN3
+X => X.IN3
+Y => Y.IN3
+Cin => Cin.IN3
 S <= xor_3:b2v_inst.o1
-Co <= or_3:b2v_inst5.o1
+Cout <= or_3:b2v_inst5.o1
 
 
 |MU4|FA4:inst|FA:b2v_inst3|xor_3:b2v_inst
@@ -490,11 +490,11 @@ i1 => inst.IN2
 
 
 |MU4|FA4:inst|FA:b2v_inst4
-A => A.IN3
-B => B.IN3
-Ci => Ci.IN3
+X => X.IN3
+Y => Y.IN3
+Cin => Cin.IN3
 S <= xor_3:b2v_inst.o1
-Co <= or_3:b2v_inst5.o1
+Cout <= or_3:b2v_inst5.o1
 
 
 |MU4|FA4:inst|FA:b2v_inst4|xor_3:b2v_inst
@@ -530,11 +530,11 @@ i1 => inst.IN2
 
 
 |MU4|FA4:inst|FA:b2v_inst5
-A => A.IN3
-B => B.IN3
-Ci => Ci.IN3
+X => X.IN3
+Y => Y.IN3
+Cin => Cin.IN3
 S <= xor_3:b2v_inst.o1
-Co <= or_3:b2v_inst5.o1
+Cout <= or_3:b2v_inst5.o1
 
 
 |MU4|FA4:inst|FA:b2v_inst5|xor_3:b2v_inst

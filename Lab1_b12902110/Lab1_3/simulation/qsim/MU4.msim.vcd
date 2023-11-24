@@ -3,7 +3,7 @@ $comment
 		vcd file MU4.msim.vcd -direction
 $end
 $date
-	Fri Nov 10 16:43:20 2023
+	Fri Nov 24 17:55:21 2023
 $end
 $version
 	ModelSim Version 10.1d
