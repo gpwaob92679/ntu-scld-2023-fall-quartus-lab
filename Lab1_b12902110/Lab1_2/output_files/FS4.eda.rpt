@@ -1,5 +1,5 @@
 EDA Netlist Writer report for FS4
-Fri Nov 10 16:42:27 2023
+Fri Nov 24 17:15:55 2023
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Nov 10 16:42:27 2023 ;
+; EDA Netlist Writer Status ; Successful - Fri Nov 24 17:15:55 2023 ;
 ; Revision Name             ; FS4                                   ;
 ; Top-level Entity Name     ; FS4                                   ;
 ; Family                    ; Cyclone IV E                          ;
@@ -93,13 +93,13 @@ Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Fri Nov 10 16:42:27 2023
+    Info: Processing started: Fri Nov 24 17:15:54 2023
 Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/ntu-scld-2023-fall-quartus-lab/Lab1_b12902110/Lab1_2/simulation/qsim/ FS4 -c FS4
 Info (204019): Generated file FS4.vo in folder "C:/ntu-scld-2023-fall-quartus-lab/Lab1_b12902110/Lab1_2/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 347 megabytes
-    Info: Processing ended: Fri Nov 10 16:42:27 2023
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Fri Nov 24 17:15:55 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -14,7 +14,7 @@
 
 // PROGRAM		"Quartus II 32-bit"
 // VERSION		"Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
-// CREATED		"Fri Nov 10 10:38:38 2023"
+// CREATED		"Fri Nov 24 17:01:46 2023"
 
 module FS(
 	B,
@@ -47,6 +47,11 @@ xor_3	b2v_inst(
 	.o1(D));
 
 
+not_1	b2v_inst1(
+	.i1(A),
+	.o1(SYNTHESIZED_WIRE_5));
+
+
 and_2	b2v_inst2(
 	.i1(SYNTHESIZED_WIRE_5),
 	.i2(B),
@@ -70,12 +75,6 @@ or_3	b2v_inst5(
 	.i2(SYNTHESIZED_WIRE_3),
 	.i3(SYNTHESIZED_WIRE_4),
 	.o1(Bo));
-
-
-nand_2	b2v_inst_nand(
-	.i1(A),
-	.i2(A),
-	.o1(SYNTHESIZED_WIRE_5));
 
 
 endmodule
