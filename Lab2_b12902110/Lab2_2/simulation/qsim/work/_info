@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\ntu-scld-2023-fall-quartus-lab\Lab2_b12902110\Lab2_2\simulation\qsim
+vAC4
+Z1 I4o:[UCd_7Vk9`BCE1b@Em3
+Z2 VA7F62NXG6NBbJULL]Jaoo3
+Z3 dC:\ntu-scld-2023-fall-quartus-lab\Lab2_b12902110\Lab2_2\simulation\qsim
+Z4 w1702017287
+Z5 8AC4.vo
+Z6 FAC4.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@a@c4
+!i10b 1
+Z10 !s100 BWPTzg_M9S>`8ilgn^F=Z3
+!s85 0
+Z11 !s108 1702017288.654000
+Z12 !s107 AC4.vo|
+Z13 !s90 -work|work|AC4.vo|
+!s101 -O0
+vAC4_vlg_check_tst
+!i10b 1
+!s100 WT1@YJ;]MN5bfjC2H51ZW2
+IdSD]f5==>3c?7baJgAfDF2
+VcEP8So17JgNKNgz87mSYW0
+R3
+Z14 w1702017286
+Z15 8Lab2_2.vwf.vt
+Z16 FLab2_2.vwf.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z17 !s108 1702017288.707000
+Z18 !s107 Lab2_2.vwf.vt|
+Z19 !s90 -work|work|Lab2_2.vwf.vt|
+!s101 -O0
+R8
+n@a@c4_vlg_check_tst
+vAC4_vlg_sample_tst
+!i10b 1
+!s100 jJoTNi;?ACWC<lQdH?dE@1
+IaAz3Zz25J>dfX3<:;I21e2
+VeZTZT>6_]G<:ciY:^IcJY3
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@a@c4_vlg_sample_tst
+vAC4_vlg_vec_tst
+!i10b 1
+!s100 PBIF_gZ2NW:fD3hd^7`;>3
+Iz[_cLnR1>2We4EN@2B6W>0
+VlD1boC0V`3ViJg7>XY?H01
+R3
+R14
+R15
+R16
+L0 238
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@a@c4_vlg_vec_tst
