@@ -1,0 +1,468 @@
+|WSC
+done <= Controller:inst3.done
+rst_n => Controller:inst3.rst_n
+rst_n => and_2:inst4.i1
+rst_n => SD:inst1.rst_n
+clk => Controller:inst3.clk
+clk => Register:inst.clk
+clk => SD:inst1.clk
+load => Controller:inst3.load
+score[0] <= Register:inst.Q[0]
+score[1] <= Register:inst.Q[1]
+score[2] <= Register:inst.Q[2]
+score[3] <= Register:inst.Q[3]
+X => SD:inst1.X
+
+
+|WSC|Controller:inst3
+done <= DFF_1:Q1.Q
+clk => DFF_1:Q1.CLK
+clk => DFF_1:Q0.CLK
+load => and_2:inst2.i2
+load => not_1:inst.i1
+rst_n => DFF_1:Q0.ClrN
+rst_n => DFF_1:Q1.ClrN
+clear <= and_2:inst4.o1
+
+
+|WSC|Controller:inst3|DFF_1:Q1
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WSC|Controller:inst3|and_2:inst1
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|Controller:inst3|DFF_1:Q0
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WSC|Controller:inst3|and_2:inst2
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|Controller:inst3|not_1:inst
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+
+
+|WSC|Controller:inst3|and_2:inst4
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|Register:inst
+Q[0] <= DFF_1:inst.Q
+Q[1] <= DFF_1:inst1.Q
+Q[2] <= DFF_1:inst2.Q
+Q[3] <= DFF_1:inst3.Q
+clk => DFF_1:inst.CLK
+clk => DFF_1:inst1.CLK
+clk => DFF_1:inst2.CLK
+clk => DFF_1:inst3.CLK
+D[0] => DFF_1:inst.D
+D[1] => DFF_1:inst1.D
+D[2] => DFF_1:inst2.D
+D[3] => DFF_1:inst3.D
+rst_n => DFF_1:inst.ClrN
+rst_n => DFF_1:inst1.ClrN
+rst_n => DFF_1:inst2.ClrN
+rst_n => DFF_1:inst3.ClrN
+
+
+|WSC|Register:inst|DFF_1:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WSC|Register:inst|DFF_1:inst1
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WSC|Register:inst|DFF_1:inst2
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WSC|Register:inst|DFF_1:inst3
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WSC|and_2:inst4
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|not_1:inst6
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+
+
+|WSC|FA4:inst2
+Co <= FA:inst.Cout
+A[0] => FA:inst5.X
+A[1] => FA:inst4.X
+A[2] => FA:inst3.X
+A[3] => FA:inst.X
+B[0] => FA:inst5.Y
+B[1] => FA:inst4.Y
+B[2] => FA:inst3.Y
+B[3] => FA:inst.Y
+S[0] <= FA:inst5.S
+S[1] <= FA:inst4.S
+S[2] <= FA:inst3.S
+S[3] <= FA:inst.S
+
+
+|WSC|FA4:inst2|FA:inst
+S <= xor_3:inst.o1
+X => xor_3:inst.i1
+X => and_2:inst2.i1
+X => and_2:inst3.i1
+Y => xor_3:inst.i2
+Y => and_2:inst2.i2
+Y => and_2:inst4.i1
+Cin => xor_3:inst.i3
+Cin => and_2:inst3.i2
+Cin => and_2:inst4.i2
+Cout <= or_3:inst5.o1
+
+
+|WSC|FA4:inst2|FA:inst|xor_3:inst
+o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst1.IN1
+
+
+|WSC|FA4:inst2|FA:inst|or_3:inst5
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i3 => inst.IN1
+i1 => inst.IN2
+
+
+|WSC|FA4:inst2|FA:inst|and_2:inst2
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|FA4:inst2|FA:inst|and_2:inst3
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|FA4:inst2|FA:inst|and_2:inst4
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|FA4:inst2|FA:inst3
+S <= xor_3:inst.o1
+X => xor_3:inst.i1
+X => and_2:inst2.i1
+X => and_2:inst3.i1
+Y => xor_3:inst.i2
+Y => and_2:inst2.i2
+Y => and_2:inst4.i1
+Cin => xor_3:inst.i3
+Cin => and_2:inst3.i2
+Cin => and_2:inst4.i2
+Cout <= or_3:inst5.o1
+
+
+|WSC|FA4:inst2|FA:inst3|xor_3:inst
+o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst1.IN1
+
+
+|WSC|FA4:inst2|FA:inst3|or_3:inst5
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i3 => inst.IN1
+i1 => inst.IN2
+
+
+|WSC|FA4:inst2|FA:inst3|and_2:inst2
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|FA4:inst2|FA:inst3|and_2:inst3
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|FA4:inst2|FA:inst3|and_2:inst4
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|FA4:inst2|FA:inst4
+S <= xor_3:inst.o1
+X => xor_3:inst.i1
+X => and_2:inst2.i1
+X => and_2:inst3.i1
+Y => xor_3:inst.i2
+Y => and_2:inst2.i2
+Y => and_2:inst4.i1
+Cin => xor_3:inst.i3
+Cin => and_2:inst3.i2
+Cin => and_2:inst4.i2
+Cout <= or_3:inst5.o1
+
+
+|WSC|FA4:inst2|FA:inst4|xor_3:inst
+o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst1.IN1
+
+
+|WSC|FA4:inst2|FA:inst4|or_3:inst5
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i3 => inst.IN1
+i1 => inst.IN2
+
+
+|WSC|FA4:inst2|FA:inst4|and_2:inst2
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|FA4:inst2|FA:inst4|and_2:inst3
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|FA4:inst2|FA:inst4|and_2:inst4
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|FA4:inst2|FA:inst5
+S <= xor_3:inst.o1
+X => xor_3:inst.i1
+X => and_2:inst2.i1
+X => and_2:inst3.i1
+Y => xor_3:inst.i2
+Y => and_2:inst2.i2
+Y => and_2:inst4.i1
+Cin => xor_3:inst.i3
+Cin => and_2:inst3.i2
+Cin => and_2:inst4.i2
+Cout <= or_3:inst5.o1
+
+
+|WSC|FA4:inst2|FA:inst5|xor_3:inst
+o1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst1.IN1
+
+
+|WSC|FA4:inst2|FA:inst5|or_3:inst5
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i3 => inst.IN1
+i1 => inst.IN2
+
+
+|WSC|FA4:inst2|FA:inst5|and_2:inst2
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|FA4:inst2|FA:inst5|and_2:inst3
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|FA4:inst2|FA:inst5|and_2:inst4
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|FA4:inst2|gnd_1:inst1
+o1 <= <GND>
+
+
+|WSC|SD:inst1
+Z101 <= and_2:inst13.o1
+clk => DFF_1:Q2.CLK
+clk => DFF_1:Q0.CLK
+clk => DFF_1:Q1.CLK
+X => not_1:inst6.i1
+X => and_2:inst9.i2
+X => and_3:inst4.i3
+X => and_3:inst5.i3
+rst_n => DFF_1:Q1.ClrN
+rst_n => DFF_1:Q0.ClrN
+rst_n => DFF_1:Q2.ClrN
+Z011 <= and_2:inst14.o1
+
+
+|WSC|SD:inst1|and_2:inst13
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|SD:inst1|DFF_1:Q2
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WSC|SD:inst1|or_4:inst7
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i3 => inst.IN1
+i4 => inst.IN2
+i2 => inst.IN3
+
+
+|WSC|SD:inst1|and_2:inst2
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|SD:inst1|or_2:inst
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i1 => inst.IN1
+
+
+|WSC|SD:inst1|not_1:inst6
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+
+
+|WSC|SD:inst1|DFF_1:Q0
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WSC|SD:inst1|or_2:inst1
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i1 => inst.IN1
+
+
+|WSC|SD:inst1|and_2:inst10
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|SD:inst1|DFF_1:Q1
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WSC|SD:inst1|and_2:inst9
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|SD:inst1|xor_2:inst8
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|SD:inst1|and_3:inst3
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst.IN2
+
+
+|WSC|SD:inst1|and_3:inst4
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst.IN2
+
+
+|WSC|SD:inst1|and_3:inst5
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst.IN2
+
+
+|WSC|SD:inst1|and_2:inst14
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|WSC|or_2:inst5
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i1 => inst.IN1
+
+
